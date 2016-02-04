@@ -1,15 +1,46 @@
+<link rel="apple-touch-icon" href="appicon.png" />
+<link rel="apple-touch-startup-image" href="startup.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-webapp-status-bar-style" content="black">
+<meta name="viewport" content="width=device-width, user-scalable=no" />
+
+
 <html>
 	<head>
 		<title>MyApp</title>
 	</head>
 	
 	<style type="text/css">
-	
+	 .button {
+				background:#333;
+				width:100px;
+				color:#fff;
+				height:20px;
+				-moz-border-radius: 20px;
+				-webkit-border-radius: 20px;
+				-khtml-border-radius: 20px;
+				border-radius: 20px;
+				text-align:center;
+             }
+	#box1 {
+	        height: 50px;
+			width: 50px;
+			border: 50px solid blue;
+			margin: 15px;
+	}
+	 
+	#box2 {
+	        height: 50px;
+			width: 50px;
+			border: 50px solid green;
+			margin: 15px;
+	} 
+	 
 	</style>
 	
 	<body>
 	<h2>Samantha Birabaharan</h2>
-		<div id='bio'>something something something.</div>
+		<div id='bio'> struggling computer science major.SOS.</div>
 	 
 	 	<h3>Assignments</h3>
 		<ul id='assignments'>
@@ -18,8 +49,11 @@
 		</ul>
 	
 		<h3>A nice button</h3>
+		
+		<div class = "button"> Click me </div>
 
 		<h3>An invisible seal</h3>
+		<p><img width="50" class="opacity" src="seal.png" /></p>
 
 		<h3>A video</h3>
 		<video width="300" height="240" controls="controls">
@@ -27,6 +61,9 @@
 		</video>
 
 		<h3>Two boxes side by side</h3>
+		<div id="box1" style= "float: left;"> BOX1 </div>
+		<div id="box2" style= "float: left;"> BOX2 </div> 
+		
 
 	</body>
 </html>
